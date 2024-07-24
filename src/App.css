@@ -2,9 +2,9 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-family: "Playfair Display", sans-serif;
+  -webkit-font-smoothing: "Playfair Display", sans-serif;
+  -moz-osx-font-smoothing: "Playfair Display", sans-serif;
   font-style: normal;
 }
 h1,
@@ -17,16 +17,20 @@ p {
   margin: 0;
 }
 :root {
-  --primary: #5e3bee;
+  --primary: #4b1b00ca;
   --heading-color: #282938;
-  --bg-shade: #f5fcff;
+  --bg-shade: #fee8d1;
   --github: #e62872;
   --darkblue: #1c1e53;
   --black: #000000;
+
+  --darkbrown: #5c4033;
   --white: #ffffff;
+  --buttonColor: #ffffff;
+  --navActive: #f5ccb8;
 }
 .btn {
-  font-family: "Roboto";
+  font-family: "Playfair Display";
   display: inline-block;
   padding: 14px 32px;
   font-size: 16px;
@@ -154,9 +158,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 85.333px;
-  background: var(--white);
-  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 85.333px;
+  background: var(--darkbrown);
   position: fixed;
   top: 0;
   left: 0;
@@ -174,19 +177,24 @@ h2 {
 }
 /* Navbar Content */
 .navbar--content {
-  color: var(--darkblue);
-  font-size: 16px;
+  color: var(--white);
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  /* font-family: "Roboto"; */
+  font-weight: 300;
   line-height: 24px;
   cursor: pointer;
 }
 .navbar--active-content {
-  color: var(--primary);
+  color: var(--navActive);
 }
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
+#hero--section--name {
+  color: var(--white);
+}
+
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -194,7 +202,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background-color: var(--bg-shade);
+  background-color: var(--darkbrown);
 }
 .hero--section--content-box {
   display: flex;
@@ -212,17 +220,17 @@ h2 {
   margin-top: 21.333px;
 }
 .hero--section--title {
-  color: var(--heading-color);
+  color: var(--white);
   font-size: 74.667px;
   font-weight: 700;
   line-height: 90px;
   align-self: stretch;
 }
 .hero--section--title--color {
-  color: var(--primary);
+  color: var(--white);
 }
 .hero--section-description {
-  color: var(--darkblue);
+  color: white;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -231,13 +239,14 @@ h2 {
   display: flex;
 }
 .hero--section--img > img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
 }
 /* Hero Section Style Ends */
 
 /* Skills Section Style */
 .skills--section {
+  background-color: var(--darkbrown);
   display: flex;
   padding: 149.33px 85.33px;
   flex-direction: column;
@@ -246,7 +255,7 @@ h2 {
   gap: 106.667px;
 }
 .skills--section--heading {
-  color: var(--heading-color);
+  color: var(--white);
   font-size: 64px;
   font-weight: 700;
   line-height: 77px;
@@ -262,15 +271,12 @@ h2 {
   display: flex;
   padding: 32px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
   flex: 1 0 0;
   border-radius: 10.6px;
   background: var(--bg-shade);
   min-height: 250px;
-}
-.skills--section--card:hover {
-  border-bottom: 4px solid var(--primary);
 }
 .skills--section--card:hover .skills--section--description {
   color: var(--darkblue);
@@ -282,15 +288,18 @@ h2 {
   align-items: center;
   gap: 13.3px;
   border-radius: 10.6px;
-  background: #fff;
+  background: #ccb19d;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.skills--section--img > img {
+  align-items: center;
+  width: 100%;
 }
 .skills--section--card--content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
+  align-items: center;
+  align-self: center;
 }
 .skills--section--title {
   color: var(--heading-color);
@@ -300,6 +309,8 @@ h2 {
 }
 .skills--section--description {
   color: var(--black);
+  align-items: center;
+
   font-size: 21.3px;
   font-style: normal;
   font-weight: 400;
@@ -391,49 +402,6 @@ h2 {
 }
 /* Portfolio Ends */
 
-/* Testimonial */
-.testimonial--section {
-  display: flex;
-  padding: 112px 84.3px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-  background-color: var(--bg-shade);
-}
-.sections--heading {
-  color: var(--heading-color);
-}
-.testimonial--section--card {
-  display: flex;
-  padding: 42.6px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 42.6px;
-  flex: 1 0 0;
-  border-radius: 8px;
-  border: 1.33px solid #006b6a;
-}
-.testimonial--section--card--reviews {
-  display: flex;
-  align-items: flex-start;
-  gap: 5.33px;
-}
-.testimonial--section--card--author--detail {
-  display: flex;
-  align-items: center;
-  gap: 21.3px;
-}
-.testimonial--author--name {
-  font-weight: 600;
-  color: var(--heading-color);
-}
-.testimonial--author--designation {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-}
-/* Testimonial Ends */
 .contact--section {
   display: flex;
   padding: 150px 85px;
@@ -504,61 +472,6 @@ input[type="checkbox"] {
   transform: translatey(-0.075em);
 }
 /* Contact End */
-
-/* Footer Start */
-/* Footer Starts */
-.footer--container {
-  display: flex;
-  padding: 106.667px 85.333px;
-  flex-direction: column;
-  align-items: flex-start;
-  background: var(--bg-shade);
-  align-items: center;
-  align-self: stretch;
-}
-.footer--link--container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-.footer--items > ul {
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 42.667px;
-  text-decoration: none;
-}
-.footer--items ul > li > a {
-  text-decoration: none;
-}
-.footer--social--icon > ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
-  text-decoration: none;
-}
-.divider {
-  margin: 106px 0 42.67px;
-  height: 1.333px;
-  width: 100%;
-  background: rgba(40, 41, 56, 0.55);
-}
-.footer--content--container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-.footer--content {
-  color: var(--black);
-  font-size: 18.667px;
-  font-weight: 400;
-  line-height: 28px;
-}
 
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {

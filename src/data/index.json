@@ -2,50 +2,50 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
+      "src": "./img/frontendSkill.png",
       "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "I excel at building dynamic, responsive user interfaces using React and JavaScript. "
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
+      "src": "./img/backendSkill.png",
       "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Proficient in Java, C#, and Spring, and love backend development."
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/AIskill.png",
+      "title": "AI",
+      "description": "Highly skilled in developing LLMs and have extensive experience with Python."
     },
     {
       "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/cloudSkill.png",
+      "title": "Cloud",
+      "description": "Extensive experience with cloud platforms such as AWS, Azure, and Google Cloud."
     }
   ],
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/qotwCard.png",
+      "title": "QOTW",
+      "description": "A dynamic React Native app facilitating conversations between friends, powered bya Java Spring backend and AWS RDS for seamless and reliable data management.",
+      "link": "https://github.com/ibrahim7860/QOTW.git"
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/virtualTA.png",
+      "title": "VirtualTA",
+      "description": "A genAI assistant designed to help students with coding and math questions, built using Python and React, and powered by the Gemini API.",
+      "link": "https://github.com/ibrahim7860/virtual-ta"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/LinkedInCreator.png",
+      "title": "LinkedIn Content Creator",
+      "description": "A cutting-edge tool crafted in JavaScript, leveraging the GenAI OpenAI API to generate compelling and high-quality posts for professional networking.",
+      "link": "https://github.com/NayeemBelal/LinkedInContentCreator.git"
     }
   ],
   "testimonial": [
