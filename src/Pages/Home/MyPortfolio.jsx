@@ -5,7 +5,9 @@ export default function MyPortfolio() {
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <h1 className="section--heading">My Portfolio</h1>
+          <h1 className="section--heading" id="portfolioHeading">
+            My Portfolio
+          </h1>
         </div>
         <div>
           <a
@@ -13,6 +15,7 @@ export default function MyPortfolio() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
+            id="githubBtn"
           >
             Visit My GitHub
           </a>
@@ -20,7 +23,13 @@ export default function MyPortfolio() {
       </div>
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
+          <a
+            key={index}
+            href={item.link}
+            className="portfolio--section--card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="portfolio--section--img">
               <img src={item.src} alt="Placeholder" />
             </div>
@@ -29,12 +38,7 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <a
-                href={item.link}
-                className="text-sm portfolio--link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <div className="text-sm portfolio--link">
                 View on GitHub
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,9 +55,9 @@ export default function MyPortfolio() {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

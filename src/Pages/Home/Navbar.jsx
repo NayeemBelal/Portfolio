@@ -46,7 +46,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
+    <nav className={`navbar ${navActive ? "active" : ""}`} id="navStuff">
       <div></div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -117,7 +117,11 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <button onClick={handleDownload} className="btn btn-primary">
+      <button
+        onClick={handleDownload}
+        className="btn btn-primary"
+        id="downloadResBtn"
+      >
         Download Resume
       </button>
     </nav>

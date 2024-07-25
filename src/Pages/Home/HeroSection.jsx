@@ -9,22 +9,24 @@ export default function HeroSection() {
             Hey, I'm Nayeem
           </p>
           <h1 className="hero--section--title">
-            <span className="hero--section-title--color">Full Stack</span>{" "}
-            <br />
-            Developer
+            <span className="hero--section-title--color">
+              Full Stack Developer
+            </span>
           </h1>
-          <p className="hero--section-description">
+          <p className="hero--section-description" id="heroSectionColorThing">
             I'm a passionate developer who thrives on solving complex problems
             and creating innovative solutions.
           </p>
         </div>
         <br />
+
         <Link
           to="Contact"
           smooth={true}
           offset={-70}
           duration={500}
           className="btn btn-primary"
+          id="connectBTN"
         >
           Let's Connect!
         </Link>

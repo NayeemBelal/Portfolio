@@ -230,11 +230,11 @@ h2 {
   color: var(--white);
 }
 .hero--section-description {
-  color: white;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
 }
+
 .hero--section--img {
   display: flex;
 }
@@ -339,6 +339,9 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
+}
+#heroSectionColorThing {
+  color: white;
 }
 .portfolio--container-box {
   display: flex;
@@ -608,6 +611,68 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1200px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .hero--section--img {
+    justify-content: center;
+    width: 400px;
+  }
+  #downloadResBtn {
+    width: 100%;
+  }
+  #heroSection {
+    padding: 30px;
+    padding-top: 90px;
+  }
+  #heroSectionColorThing {
+    font-size: larger;
+  }
+  .hero--section--content--box {
+    text-align: center;
+  }
+  #AboutMe {
+    padding: 30px;
+  }
+  #codingImg {
+    width: 320px;
+  }
+  #about1,
+  #about2 {
+    font-size: larger;
+    text-align: left;
+  }
+  #aboutHeading {
+    font-size: 35px;
+    text-align: left;
+  }
+  #aboutmesectioncontent {
+    text-align: left;
+  }
+  .portfolio--section {
+    padding: 20px;
+  }
+  #portfolioHeading {
+    font-size: 45px;
+  }
+  .portfolio--container-box {
+    padding: 0;
+  }
+  .skills--section {
+    padding: 40px 20px;
+  }
+  .skills--section--heading {
+    padding-bottom: 30px;
+  }
+  .skills--section--description {
+    font-size: larger;
+    text-align: center;
+  }
+  .contact--section {
+    padding: 40px 30px;
+  }
   .nav__hamburger {
     display: flex;
     z-index: 200;
@@ -617,10 +682,11 @@ input[type="checkbox"] {
   }
   .navbar--items {
     position: absolute;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255);
+    background-color: var(--darkbrown);
     top: -20rem;
     left: 0;
     width: 100%;
@@ -659,3 +725,29 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens Ends*/
+
+.portfolio--section--card {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* Ensure that the text color does not change */
+  border: 1px solid #ccc; /* Add some border if needed */
+  border-radius: 8px; /* Add border radius if needed */
+  overflow: hidden;
+  transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.portfolio--section--card:hover {
+  transform: scale(1.02); /* Slightly enlarge the card on hover */
+}
+
+.portfolio--section--img img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio--section--card--content {
+  padding: 16px;
+}
+.navbar {
+  z-index: 10; /* Ensure navbar stays on top */
+}

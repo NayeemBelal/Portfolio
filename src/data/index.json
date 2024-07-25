@@ -37,7 +37,7 @@
       "id": "2",
       "src": "./img/virtualTA.png",
       "title": "VirtualTA",
-      "description": "A genAI assistant designed to help students with coding and math questions, built using Python and React, and powered by the Gemini API.",
+      "description": "A genAI assistant designed to help students with coding, math and CS related questions, built using Python and React, and powered by the Gemini API.",
       "link": "https://github.com/ibrahim7860/virtual-ta"
     },
     {
